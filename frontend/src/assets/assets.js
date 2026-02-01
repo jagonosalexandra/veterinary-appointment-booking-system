@@ -11,6 +11,13 @@ import doc10 from './doctors/doc10.png'
 import doc11 from './doctors/doc11.png'
 import doc12 from './doctors/doc12.png'
 import doc13 from './doctors/doc13.png'
+import logo from './logo.svg'
+import profile_img from './profile_img.png'
+
+export const assets = {
+    logo,
+    profile_img,
+}
 
 export const doctors = [
     {
