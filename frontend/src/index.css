@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #7371FC;
+  --color-secondary: #27187E;
+  --color-tertiary: #7371FC;
 }
 
 ::-webkit-scrollbar {
@@ -10,4 +11,10 @@
 
 .active hr {
   @apply block
+}
+
+@media (max-width: 740px) {
+  .active p {
+    @apply text-secondary bg-gray-100 font-bold
+  }
 }
