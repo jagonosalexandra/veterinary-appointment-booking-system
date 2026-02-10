@@ -4,15 +4,15 @@ import { assets } from '../assets/assets'
 
 const Hero = () => {
     return (
-        <div className='flex flex-col md:flex-row flex-wrap bg-primary px-8 md:px-[12%] relative overflow-hidden'>
+        <div className='h-screen flex flex-col md:flex-row flex-wrap bg-primary px-8 md:px-[12%] relative overflow-hidden'>
 
             {/* --- Left Side --- */}
             <div className='md:w-1/2 flex flex-col items-start justify-center gap-6 py-4 md:py-[8vw]'>
 
                 <div className='flex items-start gap-6'>
-                    <div className='bg-secondary w-2 self-stretch hidden md:block rounded-full'></div>
+                    <div className='bg-secondary w-3 self-stretch hidden md:block rounded-full'></div>
                     <div>
-                        <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight'>
+                        <h1 className='text-4xl md:text-5xl lg:text-7xl font-bold text-white leading-tight'>
                             BECAUSE YOUR <br />
                             PET DESERVES <br />
                             TIMELY CARE
@@ -26,7 +26,7 @@ const Hero = () => {
 
                 <div className='flex items-start gap-6'>
                     <div className='w-2'></div>
-                    <a href='#vets' className='flex items-center gap-3 bg-white px-8 py-4 mt-16 rounded-full text-gray-700 font-medium hover:scale-105 transition-all duration-300'>
+                    <a href='#vets' className='flex items-center gap-3 bg-white px-8 py-4 mt-16 rounded-full text-gray-700 font-medium hover:scale-110 transition-all duration-300'>
                         Book appointment <FaArrowRight />
                     </a>
                 </div>
