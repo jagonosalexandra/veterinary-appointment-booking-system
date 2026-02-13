@@ -1,3 +1,9 @@
+import dental from './services/dental_icon.svg'
+import diagnostic_med from './services/diagnostic_med_icon.svg'
+import emergency from './services/emergency_icon.svg'
+import end_of_life from './services/end_of_life_icon.svg'
+import pet_export from './services/pet_export_icon.svg'
+import preventive_care from './services/preventive_care_icon.svg'
 import doc1 from './doctors/doc1.png'
 import doc2 from './doctors/doc2.png'
 import doc3 from './doctors/doc3.png'
@@ -13,12 +19,18 @@ import doc12 from './doctors/doc12.png'
 import doc13 from './doctors/doc13.png'
 import logo from './logo.svg'
 import profile_img from './profile_img.png'
-import hero_img from './hero_img.png'
+import hero from './hero.svg'
 
 export const assets = {
     logo,
     profile_img,
-    hero_img
+    hero,
+    dental,
+    diagnostic_med,
+    emergency,
+    end_of_life,
+    pet_export,
+    preventive_care
 }
 
 export const doctors = [
