@@ -20,6 +20,7 @@ import doc13 from './doctors/doc13.png'
 import logo from './logo.svg'
 import profile_img from './profile_img.png'
 import hero from './hero.svg'
+import banner from './banner.svg'
 
 export const assets = {
     logo,
@@ -30,7 +31,8 @@ export const assets = {
     emergency,
     end_of_life,
     pet_export,
-    preventive_care
+    preventive_care,
+    banner
 }
 
 export const doctors = [
