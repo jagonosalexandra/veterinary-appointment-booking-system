@@ -1,14 +1,14 @@
 import React from 'react'
 import Hero from '../components/Hero'
-import Services from '../components/services/Services'
 import TopDoctors from '../components/doctors/TopDoctors'
 import Banner from '../components/Banner'
+import OurServices from '../components/services/OurServices'
 
 const Home = () => {
   return (
     <div>
         <Hero />
-        <Services />
+        <OurServices />
         <TopDoctors />
         <Banner />
     </div>

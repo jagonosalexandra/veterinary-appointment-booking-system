@@ -1,9 +1,15 @@
-import dental from './services/dental_icon.svg'
-import diagnostic_med from './services/diagnostic_med_icon.svg'
-import emergency from './services/emergency_icon.svg'
-import end_of_life from './services/end_of_life_icon.svg'
-import pet_export from './services/pet_export_icon.svg'
-import preventive_care from './services/preventive_care_icon.svg'
+import dental from './services/dental.png'
+import diagnostic from './services/diagnostic.png'
+import emergency from './services/emergency.png'
+import end_of_life from './services/end_of_life.png'
+import pet_export from './services/pet_export.png'
+import preventive_care from './services/preventive_care.png'
+import dental_icon from './services/dental_icon.svg'
+import diagnostic_med_icon from './services/diagnostic_med_icon.svg'
+import emergency_icon from './services/emergency_icon.svg'
+import end_of_life_icon from './services/end_of_life_icon.svg'
+import pet_export_icon from './services/pet_export_icon.svg'
+import preventive_care_icon from './services/preventive_care_icon.svg'
 import doc1 from './doctors/doc1.png'
 import doc2 from './doctors/doc2.png'
 import doc3 from './doctors/doc3.png'
@@ -27,12 +33,12 @@ export const assets = {
     logo,
     profile_img,
     hero,
-    dental,
-    diagnostic_med,
-    emergency,
-    end_of_life,
-    pet_export,
-    preventive_care,
+    dental_icon,
+    diagnostic_med_icon,
+    emergency_icon,
+    end_of_life_icon,
+    pet_export_icon,
+    preventive_care_icon,
     banner,
     header
 }
@@ -46,8 +52,6 @@ export const doctors = [
         degree: 'DVM, DABVP (Feline Practice) - University of California',
         experience: '18 Years',
         about: 'Dr. Wilson specializes in advanced cardiac diagnostics for cats and preventive cardiology care. He also provides compassionate end-of-life consultations for cats with heart conditions.',
-        services: ['diagnostic medicine', 'preventive care', 'end-of-life care'],
-        fee: 145,    
         address: {
             line1: '945 Ocean Front Walk',
             line2: 'Santa Monica, CA 90401'
@@ -60,9 +64,7 @@ export const doctors = [
         specialty: 'canine specialist',
         degree: 'DVM, DACVS - Ohio State University',
         experience: '16 Years',
-        about: 'Dr. Hayes provides emergency surgical care and diagnostic consultations. He performs urgent dental extractions and oral surgeries in emergency situations.',
-        services: ['emergency care', 'diagnostic medicine', 'dental care'],
-        fee: 160,    
+        about: 'Dr. Hayes provides emergency surgical care and diagnostic consultations. He performs urgent dental extractions and oral surgeries in emergency situations.', 
         address: {
             line1: '1875 Buckeye Avenue',
             line2: 'Columbus, OH 43210'
@@ -75,9 +77,7 @@ export const doctors = [
         specialty: 'canine specialist',
         degree: 'DVM, DACVIM - Texas A&M University',
         experience: '9 Years',
-        about: 'Dr. Rivera focuses on preventive care for large breed dogs and provides comprehensive dental care services. He also assists with export documentation for pets traveling internationally.',
-        services: ['preventive care', 'dental care', 'pet export assistance'],
-        fee: 95,    
+        about: 'Dr. Rivera focuses on preventive care for large breed dogs and provides comprehensive dental care services. He also assists with export documentation for pets traveling internationally.',  
         address: {
             line1: '2102 Lone Star Road',
             line2: 'Austin, TX 73301'
@@ -233,4 +233,102 @@ export const doctors = [
             line2: 'Ann Arbor, MI 48103'
         }
     },
+]
+
+export const services = [
+    {
+        _id: 'preventive_care',
+        name: 'preventive care',
+        image: preventive_care,
+        icon: preventive_care_icon,
+        preview: 'Regular checkups, vaccinations, and wellness plans to keep pets healthy.',
+        description: "Gentle, thorough checkups where we assess your pet's overall health and catch potential issues early.",
+        inclusions: ["Annual wellness exams", 
+            "Core and lifestyle vaccinations", 
+            "Parasite prevention (fleas, ticks, heartworms)", 
+            "Nutritional counseling", 
+            "Weight management programs", 
+            "Early disease screening"
+        ],
+        fee: 65
+    },
+    {
+        _id: 'diagnostic_medicine',
+        name: 'diagnostic medicine',
+        image: diagnostic,
+        icon: diagnostic_med_icon,
+        preview: 'Advanced testing to identify illnesses and create effective treatment plans.',
+        description: "Quick, accurate diagnostics using modern equipment, often with same-day results.",
+        inclusions: [
+            "In-house laboratory testing (blood work, urinalysis)", 
+            "Digital X-rays and imaging", 
+            "Ultrasound examinations", "Ultrasound examinations", 
+            "Ultrasound examinations", 
+            "Infectious disease screening"],
+        fee: 120
+    },
+    {
+        _id: 'dental_care',
+        name: 'dental care',
+        image: dental,
+        icon: dental_icon,
+        preview: 'Teeth cleaning, extractions, and oral health treatments to prevent pain and systemic health issues.',
+        description: "Safe, monitored anesthesia for thorough cleaning and treatment, plus pain management.",
+        inclusions: [
+            "Comprehensive dental exams", 
+            "Professional teeth cleaning", 
+            "Dental X-rays", 
+            "Tooth extractions when needed", 
+            "Oral surgery", 
+            "Home care guidance"
+        ],
+        fee: 300
+    },
+    {
+        _id: 'emergency_care',
+        name: 'emergency care',
+        image: emergency,
+        icon: emergency_icon,
+        preview: '24/7 urgent care for accidents, sudden illnesses, or critical conditions when regular clinics are closed.',
+        description: "Immediate triage, rapid assessment, and stabilization by our emergency-trained team.",
+        inclusions: [
+            "After-hours emergency services", 
+            "Trauma and injury treatment", 
+            "Poisoning/toxin ingestion", 
+            "Difficulty breathing", 
+            "Severe vomiting/diarrhea", 
+            "Sudden collapse or seizures"
+        ]
+    },
+    {
+        _id: 'pet_export',
+        name: 'pet export assistance',
+        image: pet_export,
+        icon: pet_export_icon,
+        preview: 'Health certificates, vaccinations, and documentation preparation for international pet travel and relocation.',
+        description: "Step-by-step guidance through international travel requirements and paperwork.",
+        inclusions: [
+            "Health certificate preparation", 
+            "Vaccination verification", 
+            "Microchip identification", 
+            "Rabies titer testing", 
+            "Import/export documentation", 
+            "Travel crate consultation"],
+        fee: 75
+    },
+    {
+        _id: 'end_of_life',
+        name: 'end of life care',
+        image: end_of_life,
+        icon: end_of_life_icon,
+        preview: 'Compassionate euthanasia services and grief support for pets with terminal conditions or suffering.',
+        description: "Gentle, dignified care focused on comfort, with staff who understand this difficult time.",
+        inclusions: [
+            "Quality of life assessments", 
+            "Pain management consultation", 
+            "In-clinic or home euthanasia", 
+            "Cremation arrangements", 
+            "Paw print keepsakes", 
+            "Grief support resources"]
+    }
 ]
