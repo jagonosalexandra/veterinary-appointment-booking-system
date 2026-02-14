@@ -8,10 +8,10 @@ const ServiceCard = ({ name, icon, description }) => {
             <img className="w-28" src={icon} alt="" />
         </div>
         <div>
-            <h3 className="text-lg font-semibold">{name}</h3>
-            <p>{description}</p>
+            <h3 className="text-lg font-medium">{name}</h3>
+            <p className="text-sm">{description}</p>
         </div>
-        <FaArrowRightLong className="ml-auto text-2xl text-gray-600 active:scale-75" />
+        <FaArrowRightLong className="ml-auto mt-4 text-2xl text-gray-600 active:scale-75" />
     </div>
   );
 };
