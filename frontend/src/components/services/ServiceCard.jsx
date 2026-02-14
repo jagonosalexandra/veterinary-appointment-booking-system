@@ -7,14 +7,14 @@ const ServiceCard = ({ id, name, icon, description }) => {
 
   return (
     <div className="flex flex-col gap-4 bg-paleviolet p-8 rounded-lg transition-all duration-300 cursor-pointer hover:bg-primary">
-        <div>
-            <img className="w-24" src={icon} alt="" />
-        </div>
-        <div>
-            <h3 className="text-lg capitalize font-medium">{name}</h3>
-            <p className="text-sm">{description}</p>
-        </div>
-        <FaArrowRightLong onClick={() => navigate(`/service/${id}`)} className="ml-auto mt-4 text-2xl text-gray-600 active:scale-75" />
+      <div>
+        <img className="w-24" src={icon} alt="" />
+      </div>
+      <div>
+        <h3 className="text-lg capitalize font-medium">{name}</h3>
+        <p className="text-sm">{description}</p>
+      </div>
+      <FaArrowRightLong onClick={() => { navigate(`/services/${id}`); scrollTo(0, 0) }} className="ml-auto mt-4 text-2xl text-gray-600 active:scale-75" />
     </div>
   );
 };
