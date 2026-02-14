@@ -13,10 +13,10 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <div className='flex items-center justify-between text-sm mb-2 mx-8 sm:mx-[4%]'>
-            <img onClick={() => navigate('/')} src={assets.logo} alt='' className='w-52 cursor-pointer' />
+        <div className='flex items-center justify-between text-sm py-2 px-6 sm:px-[4%] sticky top-0 z-50 bg-white border-b border-gray-400'>
+            <img onClick={() => navigate('/')} src={assets.logo} alt='' className='w-40 sm:w-48 cursor-pointer transition-all' />
 
-            <ul className='hidden md:flex items-start gap-5 font-medium'>
+            <ul className='hidden md:flex items-center gap-8 font-medium text-gray-700'>
                 <NavLink to='/'>
                     <li className='py-1'>HOME</li>
                     <hr className='border-none outline-none h-0.5 bg-tertiary w-2/5 m-auto hidden' />
@@ -46,21 +46,21 @@ const Navbar = () => {
                             <img src={assets.profile_img} alt='' className='w-8 rounded-full' />
                             <FaChevronDown className='text-gray-500 text-sm' />
                             <div className='absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block'>
-                                <div className='min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4'>
+                                <div className='min-w-48 bg-white shadow-xl border border-gray-500 rounded flex flex-col gap-3 p-4'>
                                     <p onClick={() => navigate('/my-account')} className='hover:text-black cursor-pointer'>Account</p>
                                     <p onClick={() => navigate('/my-appointments')} className='hover:text-black cursor-pointer'>Appointments</p>
                                     <p onClick={() => setToken(false)} className='hover:text-black cursor-pointer'>Logout</p>
                                 </div>
                             </div>
                         </div>
-                        : <button onClick={() => navigate('/login')}>Create Account</button>
+                        : <button onClick={() => navigate('/login')} className='bg-secondary px-8 py-3 rounded-full text-white font-medium hidden md:block hover:bg-tertiary transition-all shadow-md active:scale-75'>Create Account</button>
                 }
 
-                <HiMiniBars3BottomRight onClick={() => setShowMenu(true)} className='text-3xl text-secondary md:hidden' />
+                <HiMiniBars3BottomRight onClick={() => setShowMenu(true)} className='text-3xl text-secondary md:hidden cursor-pointer' />
 
-                <div className={` ${showMenu ? 'fixed w-full' : 'h-0 w-0'} md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all`}>
+                <div className={` ${showMenu ? 'fixed w-full' : 'h-0 w-0'} md:hidden inset-0 right-0 top-0 bottom-0 z-50 overflow-hidden bg-white transition-all transform`}>
                     <div className='flex items-center justify-between px-5 py-6'>
-                        <img className='w-44' src={assets.logo} alt='' />
+                        <img className='w-40' src={assets.logo} alt='' />
                         <RxCross1 className='text-2xl text-secondary' onClick={() => setShowMenu(false)} />
                     </div>
                     <ul className='flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium'>
