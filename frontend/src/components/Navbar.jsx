@@ -13,7 +13,7 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <div className='flex items-center justify-between text-sm py-2 px-6 sm:px-[4%] sticky top-0 z-50 bg-white border-b border-gray-400'>
+        <div className='flex items-center justify-between text-sm px-6 sm:px-[4%] sticky top-0 z-50 bg-white border-b border-gray-400'>
             <img onClick={() => navigate('/')} src={assets.logo} alt='' className='w-40 sm:w-48 cursor-pointer transition-all' />
 
             <ul className='hidden md:flex items-center gap-8 font-medium text-gray-700'>
